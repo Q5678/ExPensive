@@ -38,6 +38,18 @@ https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response
 # 解锁酷我音乐会员下载
 ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver.+$ url script-request-body https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kwyyxz.js
 
+// ==UserScript==
+// @ScriptName        百度网盘
+// @Author            @Cuttlefish
+// @WechatID          公众号墨鱼手记
+// @Function          倍速
+// @ScriptTime        20210705
+// @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Rewrite/UnlockVip/BaiduCloud.conf
+// ==/UserScript==
+# > 百度云 by ddgksf2013
+https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js
+
+
 
 [MITM]
-hostname = api.m.jd.com, mkt.21cn.com, mp.weixin.qq.com, biz.caiyunapp.com, afd.baidu.com, *.kuwo.cn
+hostname = api.m.jd.com, mkt.21cn.com, mp.weixin.qq.com, biz.caiyunapp.com, afd.baidu.com, *.kuwo.cn, pan.baidu.com
