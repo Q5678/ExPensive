@@ -1,10 +1,10 @@
 ExPensive_汇总_ 。陈゛♥️₊
 
 
-#𝐘𝐨𝐮𝐭𝐮𝐛𝐞 无中文字幕机翻方案
+#𝐘𝐨𝐮𝐭𝐮𝐛𝐞 无中文字幕机翻方案 简体
 https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=(?!(zh|zh\-Hans)&)((?!&tlang=zh\-Hans).)*$ url request-header \sHTTP/1\.1(\r\n) request-header &tlang=zh-Hans HTTP/1.1$1
 
-# 京东比价
+# 京东比价京粉
 ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) url script-response-body https://raw.githubusercontent.com/Tartarus2014/Script/master/jd_price_lite.js
 
 # 天翼账号中心 app获取
@@ -14,7 +14,7 @@ https:\/\/mkt\.21cn\.com\/mkt\/api\/user\/queryActivityInfo\.do\?activityId=\d+ 
 #微信 去除公众号文章底部广告
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
-# > 彩云天气 （20201121） by ddgksf2013
+# > 彩云天气 解锁（20201121） by ddgksf2013
 https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/caiyun.js
 
 [MITM]
