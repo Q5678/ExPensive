@@ -20,12 +20,6 @@ https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response
 ^(http:\/\/c\.tieba\.baidu\.com\/(tiebaads\/commonbatch|c\/s\/sync)|https:\/\/afd\.baidu\.com\/afd\/entry) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js
 ^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js
 
-#酷我音乐 解锁会员
-^http[\s\S]*kuwo\.cn/(vip/v2/user/vip|vip/v2/userbase/vip\?op=getMCInfo|a\.p\?op=getvip|vip/v2/theme|EcomResourceServer/getMotor.do|openapi/v1/album/myRec/dataList|v2/api/pay/payInfo/kwplayer/payMiniBar) url script-response-body https://napi.ltd/script/KuWo/KuWo.js
-^http\://(omp-audiobookpay\.lrts\.me|audiobookpay\.kuwo\.cn)/a.p url response-body (?<=\"(playright|downright)\"\:)0 response-body 1
-^http[\s\S]*(rich|mobilead)\.kuwo\.cn url reject
-^(http[\s\S]*kuwo\.cn/music\.pay\?uid=)[\d]+([\s\S]*ptype=vip&ids=[\s\S]*) url 307 $18$2
-
 
 #百度云 百度网盘解锁Svip
 https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js
@@ -38,4 +32,4 @@ https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body
 
 
 [MITM]
-hostname = api.m.jd.com, mp.weixin.qq.com, biz.caiyunapp.com, afd.baidu.com, *.kuwo.cn, omp-audiobookpay.Irts.me, pan.baidu.com, spclient.wg.spotify.com
+hostname = api.m.jd.com, mp.weixin.qq.com, biz.caiyunapp.com, afd.baidu.com, omp-audiobookpay.Irts.me, pan.baidu.com, spclient.wg.spotify.com
