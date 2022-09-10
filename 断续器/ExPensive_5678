@@ -32,4 +32,4 @@ https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body
 
 
 [MITM]
-hostname = api.m.jd.com, mp.weixin.qq.com, biz.caiyunapp.com, afd.baidu.com, omp-audiobookpay.Irts.me, pan.baidu.com, spclient.wg.spotify.com
+hostname = api.m.jd.com, mp.weixin.qq.com, biz.caiyunapp.com, afd.baidu.com, omp-audiobookpay.Irts.me, pan.baidu.com, spclient.wg.spotify.com, www.youtube.com
