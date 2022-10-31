@@ -21,8 +21,8 @@ https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response
 ^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js
 
 
-#百度云 百度网盘解锁Svip
-https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js
+## > 百度云 by ddgksf2013
+https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Crack/bdcloud.js
 
 # 𝐒𝐩𝐨𝐭𝐢𝐟𝐲 𝐏𝐫𝐨解锁高音质
 # 部分解锁premium 需iOS15 ,建议重新登录,音质不能设置为超高
