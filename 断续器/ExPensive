@@ -1,35 +1,11 @@
 #  ExPensive_5678   /汇总/。陈゛♥️₊
 
 
-# 𝐘𝐨𝐮𝐭𝐮𝐛𝐞 无中文字幕机翻方案 简体
-https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=(?!(zh|zh\-Hans)&)((?!&tlang=zh\-Hans).)*$ url request-header \sHTTP/1\.1(\r\n) request-header &tlang=zh-Hans HTTP/1.1$1
-
 # 京东比价 京粉
 ^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item) url script-response-body https://raw.githubusercontent.com/Tartarus2014/Script/master/jd_price_lite.js
 
-#微信 去除公众号文章底部广告
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
-
-#彩云天气 解锁vip
-https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/caiyun.js
-
-# 贴吧去广告-qx(iOS15)
-# 副作用:新回复等通知功能不可用,需手动进入消息tab页点击查看
-# 强烈建议执行以下操作:贴吧->我的->右上角设置->隐私设置->个性化广告推荐-> `关闭程序化广告` `关闭个性化广告`
-# 1.开屏页广告 2.推荐页列表/吧内帖子列表的直播和其他广告去除 3.帖子详情页直播和关联商品及其他广告去除 4.帖子看图模式广告去除 5.首页/帖子详情页右下角悬浮广告去除 6.部分吧内的置顶/最新中间的广告/head图片广告去除
-^(http:\/\/c\.tieba\.baidu\.com\/(tiebaads\/commonbatch|c\/s\/sync)|https:\/\/afd\.baidu\.com\/afd\/entry) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js
-^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js
-
-
-## > 百度云 by ddgksf2013
-https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Crack/bdcloud.js
-
-# 𝐒𝐩𝐨𝐭𝐢𝐟𝐲 𝐏𝐫𝐨解锁高音质
-# 部分解锁premium 需iOS15 ,建议重新登录,音质不能设置为超高
-# 1. 搜索界面 歌单/歌曲可以随意切换完全播放  2. 音乐库已点赞歌曲随意切换完全播放
-^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
 
 
 [MITM]
-hostname = api.m.jd.com, mp.weixin.qq.com, biz.caiyunapp.com, afd.baidu.com, omp-audiobookpay.Irts.me, pan.baidu.com, spclient.wg.spotify.com, www.youtube.com
+hostname = api.m.jd.com
